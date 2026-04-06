@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Seu site precisa trabalhar por você 24h por dia. Nós criamos páginas que atraem, convencem e transformam visitantes em clientes.">
+    <meta name="keywords" content="criação de sites, landing pages, alta conversão, web design premium, kriva dev, sites profissionais">
+    <meta name="author" content="Kriva dev">
+    <link rel="canonical" href="https://krivadev.vercel.app">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://krivadev.vercel.app">
+    <meta property="og:title" content="Criação de Sites Profissionais | Kriva dev">
+    <meta property="og:description" content="Nós criamos páginas que atraem, convencem e transformam visitantes em clientes. Alta conversão e design premium.">
+    <meta property="og:image" content="assets/previewsite.webp">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://krivadev.vercel.app">
+    <meta property="twitter:title" content="Criação de Sites Profissionais | Kriva dev">
+    <meta property="twitter:description" content="Nós criamos páginas que atraem, convencem e transformam visitantes em clientes. Alta conversão e design premium.">
+    <meta property="twitter:image" content="assets/previewsite.webp">
+
+    <title>Criação de Sites Profissionais | Kriva dev</title>
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="src/css/critical.css" fetchpriority="high">
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Rock+Salt&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Rock+Salt&display=swap"></noscript>
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward,arrow_right_alt,check_circle,distance,draw,expand_more,library_add,lock,rocket_launch,support_agent,swipe,verified&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward,arrow_right_alt,check_circle,distance,draw,expand_more,library_add,lock,rocket_launch,support_agent,swipe,verified&display=swap"></noscript>
+
+    <link rel="preload" as="style" href="src/css/style.css" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="src/css/style.css"></noscript>
+
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.tailwindConfig={theme:{extend:{colors:{accent:'#84FF00',dark:{DEFAULT:'#050505',100:'#111111',200:'#141414',300:'#1b2327'}},fontFamily:{sans:['Plus Jakarta Sans','sans-serif'],rock:['Rock Salt','cursive'],inter:['Plus Jakarta Sans','sans-serif']}}}};
+        document.addEventListener('DOMContentLoaded',function(){if(window.tailwind&&window.tailwindConfig)tailwind.config=window.tailwindConfig;});
+    </script>
+</head>
+
+<body class="bg-dark text-white selection:bg-accent selection:text-black overflow-x-hidden">
+
+<div class="custom-cursor"><div class="custom-cursor-dot"></div><div class="custom-cursor-text">View</div></div>
+
+<div id="loader">
+    <div class="loader-wordmark">
+        <img src="assets/logo.webp" alt="Kriva Dev" id="loader-logo" width="60" height="60" fetchpriority="high" decoding="async">
+    </div>
+</div>
+
+<header class="absolute top-0 left-0 w-full px-6 md:px-12 py-8 z-50 flex justify-between items-center">
+    <a href="#home" aria-label="Voltar ao início" class="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105">
+        <img src="assets/logo.webp" alt="kriva.dev" class="h-8 w-auto" width="32" height="32" fetchpriority="high" decoding="async">
+    </a>
+    <button id="mobile-menu-btn" aria-label="Abrir Menu" class="md:hidden cursor-pointer relative z-[60] bg-dark-200/90 backdrop-blur-xl border border-white/10 p-3 rounded-full flex flex-col justify-center items-center gap-1.5 transition-all">
+        <span class="block w-5 h-0.5 bg-white transition-transform duration-300 origin-center" id="bar1"></span>
+        <span class="block w-5 h-0.5 bg-accent transition-opacity duration-300" id="bar2"></span>
+        <span class="block w-5 h-0.5 bg-white transition-transform duration-300 origin-center" id="bar3"></span>
+    </button>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 z-[45] bg-dark/95 backdrop-blur-2xl flex flex-col justify-center items-center gap-8 opacity-0 pointer-events-none transition-opacity duration-500 md:hidden">
+    <a href="#home" class="mobile-link text-3xl font-bold text-white hover:text-accent transition-colors">Início</a>
+    <a href="#beneficios" class="mobile-link text-3xl font-bold text-white hover:text-accent transition-colors">Benefícios</a>
+    <a href="#passo-a-passo" class="mobile-link text-3xl font-bold text-white hover:text-accent transition-colors">Processo</a>
+    <a href="#planos" class="mobile-link text-3xl font-bold text-white hover:text-accent transition-colors">Planos</a>
+    <a href="#faq" class="mobile-link text-3xl font-bold text-white hover:text-accent transition-colors">Dúvidas</a>
+    <a href="#planos" class="mobile-link btn-magnetic mt-4 bg-accent text-black font-bold text-sm tracking-widest uppercase px-8 py-4 rounded-full shadow-[0_0_24px_rgba(132,255,0,0.25)] flex items-center justify-center gap-2">
+        QUERO MEU SITE
+        <span class="material-symbols-outlined text-lg">arrow_outward</span>
+    </a>
+</div>
+
+<nav id="floating-nav" class="fixed top-6 left-1/2 -translate-x-1/2 z-[60] bg-dark-200/80 backdrop-blur-xl border border-white/10 rounded-full px-2 py-2 hidden md:flex items-center gap-1 transition-all duration-500 opacity-0 -translate-y-10 pointer-events-none shadow-2xl">
+    <a href="#home" class="nav-item px-5 py-2.5 text-xs font-medium text-white/70 hover:text-white">Início</a>
+    <a href="#beneficios" class="nav-item px-5 py-2.5 text-xs font-medium text-white/70 hover:text-white">Benefícios</a>
+    <a href="#passo-a-passo" class="nav-item px-5 py-2.5 text-xs font-medium text-white/70 hover:text-white">Processo</a>
+    <a href="#planos" class="nav-item px-5 py-2.5 text-xs font-medium text-white/70 hover:text-white">Planos</a>
+    <a href="#faq" class="nav-item px-5 py-2.5 text-xs font-medium text-white/70 hover:text-white">Dúvidas</a>
+    <a href="https://wa.me/5511965837275?text=Quero%20um%20site%20profissional%20que%20converta" target="_blank" rel="noopener noreferrer" class="nav-item btn-magnetic ml-2 bg-accent text-black font-bold text-xs tracking-widest uppercase px-6 py-3 rounded-full hover:shadow-[0_0_35px_rgba(132,255,0,0.5)] hover:scale-105 active:scale-95 transition-all shadow-[0_0_24px_rgba(132,255,0,0.25)] flex items-center gap-2">
+        QUERO MAIS CLIENTES
+        <span class="material-symbols-outlined text-sm">arrow_outward</span>
+    </a>
+</nav>
+
+<a href="https://wa.me/5511965837275?text=Quero%20um%20site%20profissional%20que%20converta" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="fixed bottom-12 right-12 z-40 w-14 h-14 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+    <div class="absolute inset-0 bg-accent rounded-full animate-radar"></div>
+    <div class="absolute inset-0 bg-accent rounded-full animate-radar delay-1500"></div>
+    <div class="absolute inset-0 bg-accent rounded-full animate-radar delay-3000"></div>
+   <img loading="lazy" src="/assets/whatsapp.svg" alt="WhatsApp" width="56" height="56" class="relative w-full h-full object-contain drop-shadow-[0_0_10px_rgba(37,211,102,0.5)]"/>
+</a>
+
+<main>
+
+<section id="home" class="relative min-h-[100svh] landscape:min-h-0 flex items-center justify-center text-center px-4 py-20 bg-custom-grid overflow-hidden">
+    <div class="max-w-5xl z-10 flex flex-col items-center text-center mx-auto">
+        <div class="reveal mb-6 md:mb-8 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-[10px] sm:text-xs font-bold tracking-widest uppercase shadow-[0_0_15px_rgba(132,255,0,0.1)]">
+            <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+            Últimas vagas para novos projetos
+        </div>
+        <h1 class="reveal text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold leading-tight mb-6 md:mb-8 tracking-tighter text-center max-w-4xl mx-auto">
+            Sites que transformam visitantes em <span class="font-rock text-accent text-3xl sm:text-4xl md:text-6xl -rotate-2 inline-block mx-3">CLIENTES</span> todos os dias.
+        </h1>
+        <p class="reveal text-white/65 text-base md:text-xl max-w-2xl mb-8 md:mb-14 font-light leading-relaxed text-center mx-auto">
+            Seu site precisa trabalhar por você 24h por dia. Nós criamos páginas que atraem, convencem e transformam visitantes em clientes.
+        </p>
+        <div class="reveal flex items-center justify-center w-full mt-4">
+            <a href="https://wa.me/5511965837275?text=Quero%20um%20site%20profissional%20que%20converta" target="_blank" rel="noopener noreferrer" class="btn-magnetic group cursor-pointer bg-accent text-black px-12 py-5 rounded-full font-bold text-xs tracking-widest hover:shadow-[0_0_50px_rgba(132,255,0,0.4)] hover:scale-110 active:scale-95 transition-all duration-300 flex items-center gap-3 shadow-[0_0_30px_rgba(132,255,0,0.15)] ring-1 ring-white/10">
+                QUERO MAIS CLIENTES
+                <span class="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">arrow_outward</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="border-y border-white/5 py-6 overflow-hidden bg-[#0a0a0a]">
+    <div class="marquee-content gap-8 whitespace-nowrap items-center text-white/20 font-bold tracking-tighter italic text-sm md:text-base">
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+    </div>
+</div>
+
+<section id="beneficios" class="py-32 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="flex flex-col items-center md:items-start text-center md:text-left gap-8">
+            <h2 class="reveal font-rock text-accent text-3xl md:text-5xl uppercase tracking-widest">BENEFÍCIOS</h2>
+            <p class="reveal text-lg text-white/60 leading-relaxed max-w-md mx-auto md:mx-0">
+                Criamos ecossistemas que trabalham por você. Sem enrolação, direto ao ponto: design focado na melhor conversão possível para seu negócio.
+            </p>
+            <a href="https://wa.me/5511965837275?text=Quero%20um%20site%20profissional%20que%20converta" target="_blank" rel="noopener noreferrer" class="btn-magnetic reveal group cursor-pointer bg-accent text-black font-bold uppercase tracking-widest text-sm px-10 py-4 rounded-full hover:shadow-[0_0_35px_rgba(132,255,0,0.5)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 shadow-[0_0_24px_rgba(132,255,0,0.25)]">
+                QUERO MEU SITE AGORA
+                <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">arrow_outward</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <article class="reveal-card bg-accent rounded-2xl p-6 text-black flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-6 h-6 bg-black text-accent rounded-full flex items-center justify-center text-[10px] font-bold">1</span>
+                    <h3 class="font-bold text-sm uppercase tracking-widest">Autoridade imediata</h3>
+                </div>
+                <p class="text-xs font-medium leading-relaxed opacity-80">Seu site passa confiança em segundos ou você perde o cliente. Garantimos o impacto certo.</p>
+            </article>
+            <article class="reveal-card bg-dark-100 border border-white/5 rounded-2xl p-6 text-white flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-6 h-6 bg-white/10 text-accent rounded-full flex items-center justify-center text-[10px] font-bold">2</span>
+                    <h3 class="font-bold text-sm text-accent uppercase tracking-widest">Apareça no Google</h3>
+                </div>
+                <p class="text-xs text-white/50 leading-relaxed">Se não aparece, você não vende. Estruturamos pra você ser encontrado por quem quer comprar.</p>
+            </article>
+            <article class="reveal-card md:col-span-2 bg-[#202c33] rounded-3xl rounded-tl-none p-8 flex flex-col justify-center relative min-h-[220px] shadow-2xl border-l-4 border-accent">
+                <div class="absolute -left-3 top-0 w-4 h-4 bg-[#202c33] clip-whatsapp-tail"></div>
+                <div class="flex flex-col gap-3">
+                    <span class="text-accent font-bold text-xs uppercase tracking-widest">Felipe Albani</span>
+                    <div class="relative bg-dark-200 border border-white/5 rounded-3xl p-8 lg:p-10 mb-8 italic text-white/80 leading-relaxed text-sm md:text-base">
+                        "Mano, vcs não tem noção do trampo dos caras da Kriva... Pedi minha LP e em menos de uma semana já tava td no ar. O design ficou absurdo e <span class="text-accent font-bold px-1 bg-accent/10 rounded">já começou a pingar os primeiros leads</span> hj kkkk. Podem confiar q os caras são brabos!"
+                    </div>
+                </div>
+            </article>
+            <article class="reveal-card bg-dark-100 border border-white/5 rounded-2xl p-6 text-white flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-6 h-6 bg-white/10 text-accent rounded-full flex items-center justify-center text-[10px] font-bold">3</span>
+                    <h3 class="font-bold text-sm text-accent uppercase tracking-widest">Velocidade que converte</h3>
+                </div>
+                <p class="text-xs text-white/50 leading-relaxed">Cada segundo de demora custa dinheiro. Seu site carrega rápido e não deixa seu cliente desistir.</p>
+            </article>
+            <article class="reveal-card bg-accent rounded-2xl p-6 text-black flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-6 h-6 bg-black text-accent rounded-full flex items-center justify-center text-[10px] font-bold">4</span>
+                    <h3 class="font-bold text-sm uppercase tracking-widest">Estrutura pra vender</h3>
+                </div>
+                <p class="text-xs font-medium leading-relaxed opacity-80">Não é só bonito. É pensado de ponta a ponta para gerar leads e vendas todos os dias.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="passo-a-passo" class="py-32 bg-[#080808] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 flex flex-col items-center">
+            <h2 class="reveal font-rock text-accent text-3xl md:text-5xl uppercase tracking-widest">PROCESSO</h2>
+            <p class="reveal text-white/50 mt-4 leading-relaxed max-w-lg">
+                Você não precisa entender de site. A gente cuida de tudo pra você. <br>Do zero ao lançamento em poucos dias.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative group/process">
+            <div class="hidden md:block absolute top-[48px] left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-accent/20 to-transparent z-0"></div>
+            <div class="reveal-card flex flex-col items-center text-center gap-6 relative z-10 cursor-default">
+                <div class="w-24 h-24 rounded-full bg-dark-100 border-2 border-accent flex items-center justify-center text-3xl font-black text-accent shadow-[0_0_30px_rgba(132,255,0,0.1)]">1</div>
+                <div><h3 class="text-xl font-bold mb-2">Briefing</h3><p class="text-sm text-white/50">Entendemos a essência da sua marca e objetivos de venda.</p></div>
+            </div>
+            <div class="reveal-card flex flex-col items-center text-center gap-6 relative z-10 cursor-default">
+                <div class="w-24 h-24 rounded-full bg-dark-100 border border-white/10 flex items-center justify-center text-3xl font-black text-white/30">2</div>
+                <div><h3 class="text-xl font-bold mb-2">Design UI</h3><p class="text-sm text-white/50">Criamos o visual da página aprovando tudo com você.</p></div>
+            </div>
+            <div class="reveal-card flex flex-col items-center text-center gap-6 relative z-10 cursor-default">
+                <div class="w-24 h-24 rounded-full bg-dark-100 border border-white/10 flex items-center justify-center text-3xl font-black text-white/30">3</div>
+                <div><h3 class="text-xl font-bold mb-2">Código</h3><p class="text-sm text-white/50">Transformamos o design em uma página rápida e responsiva.</p></div>
+            </div>
+            <div class="reveal-card flex flex-col items-center text-center gap-6 relative z-10 cursor-default">
+                <div class="w-24 h-24 rounded-full bg-accent flex items-center justify-center text-black shadow-[0_0_30px_rgba(132,255,0,0.2)]">
+                    <span class="material-symbols-outlined text-4xl">rocket_launch</span>
+                </div>
+                <div><h3 class="text-xl font-bold mb-2 text-accent">Lançamento</h3><p class="text-sm text-white/50">Site no ar, otimizado e pronto para receber seus clientes.</p></div>
+            </div>
+        </div>
+        <div class="reveal text-center mt-16">
+            <a href="https://wa.me/5511965837275?text=Quero%20um%20site%20profissional%20que%20converta" target="_blank" rel="noopener noreferrer" class="btn-magnetic inline-flex items-center gap-2 bg-accent text-black font-bold uppercase tracking-widest text-sm px-10 py-4 rounded-full hover:shadow-[0_0_35px_rgba(132,255,0,0.5)] hover:scale-105 active:scale-95 transition-all shadow-[0_0_24px_rgba(132,255,0,0.25)]">
+                Iniciar meu projeto agora
+                <span class="material-symbols-outlined text-lg">arrow_outward</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="planos" class="py-32 relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-accent opacity-[0.02] blur-[120px] rounded-full pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-12 flex flex-col items-center">
+            <h2 class="reveal font-rock text-accent text-3xl md:text-5xl uppercase tracking-widest text-center mb-4">CRESCER EXIGE INVESTIMENTO</h2>
+            <p class="reveal text-white/60 text-base md:text-lg lg:text-xl font-medium tracking-wide text-center max-w-2xl mx-auto mt-4 mb-10 italic leading-relaxed">
+                "Um único cliente pode pagar o investimento inteiro do seu site."
+            </p>
+        </div>
+        <div class="reveal flex justify-center mb-14">
+            <div class="inline-flex items-center gap-2.5 bg-accent/8 border border-accent/20 rounded-full px-5 py-2.5 text-accent text-[10px] font-bold tracking-widest uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent urgency-dot"></span>
+                Vagas limitadas para garantir a qualidade.
+            </div>
+        </div>
+        <div class="cards-container flex lg:grid lg:grid-cols-3 gap-10 overflow-x-auto lg:overflow-visible snap-x snap-mandatory px-10 py-12 lg:py-0 -mx-6 lg:mx-0 lg:px-0 items-center">
+            <article class="plan-card reveal-card snap-center min-w-[85vw] lg:min-w-0 bg-dark-100 border border-white/5 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:border-white/10 h-full">
+                <h3 class="text-white/40 text-xs tracking-[0.2em] font-bold uppercase">Express</h3>
+                <div>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-white/40 text-xl font-medium">R$</span>
+                        <span class="text-white text-5xl font-bold tracking-tighter">697</span>
+                    </div>
+                    <p class="text-white/30 text-[11px] italic mt-1">+ R$ 67/mês para hospedagem</p>
+                </div>
+                <ul class="flex-1 flex flex-col gap-4 text-sm text-white/70">
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Design original e moderno</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> 100% responsivo</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Animações suaves</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Integração WhatsApp</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> 1 rodada de revisão</li>
+                </ul>
+                <div class="mt-4 pt-6 border-t border-white/5 flex justify-between items-center text-[11px] text-white/40 tracking-wider mb-4">
+                    <span>ENTREGA</span><span class="font-bold text-white">Até 6 dias úteis</span>
+                </div>
+                <a href="https://wa.me/5511965837275?text=Quero%20o%20Plano%20Express%20-%20R%24%20697" target="_blank" rel="noopener noreferrer" class="btn-magnetic w-full py-4 rounded-full bg-accent text-black font-bold uppercase tracking-widest text-[10px] hover:shadow-[0_0_35px_rgba(132,255,0,0.5)] hover:scale-105 active:scale-95 transition-all flex justify-center items-center gap-2 shadow-[0_0_24px_rgba(132,255,0,0.15)]">
+                    Quero Express - R$ 697 <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                </a>
+            </article>
+            <article class="plan-card reveal-card snap-center min-w-[320px] lg:min-w-0 bg-accent rounded-[2.5rem] p-8 flex flex-col gap-6 h-full relative shadow-[0_0_50px_rgba(132,255,0,0.1)]">
+                <div class="absolute -top-4 right-8 bg-black text-accent text-[10px] font-black px-4 py-1.5 rounded-full tracking-widest uppercase shadow-xl">Mais Popular</div>
+                <h3 class="text-black/50 text-xs tracking-[0.2em] font-bold uppercase mt-2">Pro</h3>
+                <div>
+                    <span class="text-black/40 text-xs line-through font-medium">R$ 1.297,99</span>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-black/70 text-xl font-bold">R$</span>
+                        <span class="text-black text-6xl font-black tracking-tighter">997</span>
+                    </div>
+                    <p class="text-black/50 text-[11px] italic font-medium mt-1">+ R$ 67/mês para hospedagem</p>
+                </div>
+                <ul class="flex-1 flex flex-col gap-4 text-sm text-black font-medium">
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-xl shrink-0">check_circle</span> Landing page de alta conversão</li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-xl shrink-0">check_circle</span> Design exclusivo</li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-xl shrink-0">check_circle</span> Animações ultra modernas</li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-xl shrink-0">check_circle</span> Tela de carregamento</li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-xl shrink-0">check_circle</span> SEO 95+ (Google Ready)</li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-xl shrink-0">check_circle</span> 2 rodadas de revisão</li>
+                </ul>
+                <div class="mt-4 pt-6 border-t border-black/10 flex justify-between items-center text-[11px] text-black/60 tracking-wider font-bold mb-4">
+                    <span>ENTREGA</span><span class="text-black text-sm">Até 9 dias úteis</span>
+                </div>
+                <a href="https://wa.me/5511965837275?text=Quero%20o%20Plano%20Pro%20-%20R%24%20997" target="_blank" rel="noopener noreferrer" class="btn-magnetic w-full py-5 rounded-3xl bg-black text-accent font-black uppercase tracking-widest text-[10px] hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all flex justify-center items-center gap-2 group">
+                    Quero Pro - R$ 997
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">arrow_outward</span>
+                </a>
+            </article>
+            <article class="plan-card reveal-card snap-center min-w-[85vw] lg:min-w-0 bg-dark-100 border border-white/5 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:border-white/10 h-full">
+                <h3 class="text-white/40 text-xs tracking-[0.2em] font-bold uppercase">Elite</h3>
+                <p class="text-[10px] text-accent font-black tracking-widest uppercase mb-1">Para negócios que querem dominar o mercado</p>
+                <div>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-white/40 text-xl font-medium">R$</span>
+                        <span class="text-white text-5xl font-bold tracking-tighter">2.997</span>
+                    </div>
+                    <p class="text-white/30 text-[11px] italic mt-1">+ R$ 67/mês para hospedagem</p>
+                </div>
+                <ul class="flex-1 flex flex-col gap-4 text-sm text-white/70">
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Até 3 páginas completas</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> UX/UI profissional exclusiva</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> SEO 99+ alta performance</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Revisões ilimitadas</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Consultoria de funil</li>
+                    <li class="flex items-start gap-3"><span class="text-accent material-symbols-outlined text-xl shrink-0">check_circle</span> Otimização avançada (CRO)</li>
+                </ul>
+                <div class="mt-4 pt-6 border-t border-white/5 flex justify-between items-center text-[11px] text-white/40 tracking-wider mb-4">
+                    <span>ENTREGA</span><span class="font-bold text-white">Até 12 dias úteis</span>
+                </div>
+                <a href="https://wa.me/5511965837275?text=Quero%20o%20Plano%20Elite%20-%20R%24%202.997" target="_blank" rel="noopener noreferrer" class="btn-magnetic w-full py-4 rounded-full bg-accent text-black font-bold uppercase tracking-widest text-[10px] hover:shadow-[0_0_35px_rgba(132,255,0,0.5)] hover:scale-105 active:scale-95 transition-all flex justify-center items-center gap-2 shadow-[0_0_24px_rgba(132,255,0,0.15)]">
+                    Quero Elite - R$ 2.997 <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+                </a>
+            </article>
+        </div>
+        <div class="lg:hidden flex flex-col items-center gap-4 mt-8">
+            <div class="flex items-center gap-2 text-white/20 text-[10px] font-bold tracking-[.2em] uppercase">
+                <span class="material-symbols-outlined text-sm">swipe</span> deslize para ver mais
+            </div>
+            <div class="w-32 h-1 bg-white/5 rounded-full overflow-hidden relative">
+                <div id="plan-scroll-indicator" class="absolute top-0 left-0 h-full bg-accent rounded-full w-[33%]"></div>
+            </div>
+        </div>
+        <div class="reveal mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-white/35 text-xs">
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent text-base">verified</span> Só finalizamos quando fizer sentido pra você.</span>
+            <span class="hidden sm:block w-px h-4 bg-white/10"></span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent text-base">lock</span> Pagamento seguro</span>
+            <span class="hidden sm:block w-px h-4 bg-white/10"></span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent text-base">support_agent</span> Suporte pós-entrega</span>
+        </div>
+    </div>
+</section>
+
+<section id="servicos-extras" class="py-24 bg-[#050505] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-rock text-accent text-2xl md:text-4xl uppercase tracking-widest mb-4">POTENCIALIZE SEU PROJETO</h2>
+            <p class="text-white/50 text-sm md:text-base max-w-xl mx-auto">
+                Precisa de algo a mais? Adicione recursos extras para deixar sua presença digital ainda mais completa e profissional.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="group bg-[#111111] border border-white/10 p-8 rounded-[2rem] hover:border-accent/40 transition-all duration-300">
+                <div class="flex flex-col h-full gap-4">
+                    <span class="material-symbols-outlined text-accent text-4xl">distance</span>
+                    <h3 class="text-white font-bold text-xl">Google Meu Negócio</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Configuração completa para sua empresa aparecer no Maps e atrair clientes locais.</p>
+                    <div class="mt-auto pt-6 border-t border-white/5 flex items-baseline gap-2">
+                        <span class="text-white/40 text-xs font-medium">R$</span>
+                        <span class="text-accent text-3xl font-black">350</span>
+                    </div>
+                </div>
+            </article>
+            <article class="group bg-[#111111] border border-white/10 p-8 rounded-[2rem] hover:border-accent/40 transition-all duration-300">
+                <div class="flex flex-col h-full gap-4">
+                    <span class="material-symbols-outlined text-accent text-4xl">draw</span>
+                    <h3 class="text-white font-bold text-xl">Design de Logo</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Criação de identidade visual profissional para passar autoridade imediata ao seu negócio.</p>
+                    <div class="mt-auto pt-6 border-t border-white/5 flex items-baseline gap-2">
+                        <span class="text-white/40 text-xs font-medium">R$</span>
+                        <span class="text-accent text-3xl font-black">90</span>
+                    </div>
+                </div>
+            </article>
+            <article class="group bg-[#111111] border border-white/10 p-8 rounded-[2rem] hover:border-accent/40 transition-all duration-300">
+                <div class="flex flex-col h-full gap-4">
+                    <span class="material-symbols-outlined text-accent text-4xl">library_add</span>
+                    <h3 class="text-white font-bold text-xl">Página Extra</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Adicione páginas internas (Sobre, Serviços, Contato) mantendo o design premium.</p>
+                    <div class="mt-auto pt-6 border-t border-white/5 flex items-baseline gap-2">
+                        <span class="text-white/40 text-xs font-medium">R$</span>
+                        <span class="text-accent text-3xl font-black">150</span>
+                        <span class="text-white/30 text-[10px] uppercase font-bold tracking-tighter">/cada</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="mt-12 text-center">
+            <p class="text-white/30 text-[10px] uppercase tracking-widest font-bold">* Valores exclusivos para novos projetos</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-32 px-6 max-w-3xl mx-auto bg-[#080808]">
+    <h2 class="reveal font-rock text-accent text-3xl md:text-5xl text-center mb-16 flex items-center justify-center gap-4 tracking-widest uppercase">DÚVIDAS FREQUENTES</h2>
+    <div class="space-y-4 w-full">
+        <div class="reveal-card faq-item bg-dark-100 rounded-2xl border border-white/5 overflow-hidden hover:border-accent/20 transition-colors">
+            <button class="cursor-pointer w-full p-6 text-left flex justify-between items-center font-bold text-white/90 text-sm md:text-base gap-4">
+                Qual é o prazo de entrega do meu site?
+                <span class="material-symbols-outlined text-white/40 icon shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content px-6"><p class="pb-6 text-white/50 text-sm leading-relaxed">O prazo varia conforme o plano: Express até 6 dias, Pro até 9 e Elite até 12 dias úteis — após o envio de todas as informações iniciais.</p></div>
+        </div>
+        <div class="reveal-card faq-item bg-dark-100 rounded-2xl border border-white/5 overflow-hidden hover:border-accent/20 transition-colors">
+            <button class="cursor-pointer w-full p-6 text-left flex justify-between items-center font-bold text-white/90 text-sm md:text-base gap-4">
+                Eu preciso pagar algo mensalmente?
+                <span class="material-symbols-outlined text-white/40 icon shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content px-6"><p class="pb-6 text-white/40 text-sm leading-relaxed">O único custo mensal é a hospedagem (R$ 67). Sem isso, seu site nem existiria online. É o básico pra você começar a gerar clientes todos os dias.</p></div>
+        </div>
+        <div class="reveal-card faq-item bg-dark-100 rounded-2xl border border-white/5 overflow-hidden hover:border-accent/20 transition-colors">
+            <button class="cursor-pointer w-full p-6 text-left flex justify-between items-center font-bold text-white/90 text-sm md:text-base gap-4">
+                O site já vem otimizado para o Google (SEO)?
+                <span class="material-symbols-outlined text-white/40 icon shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content px-6"><p class="pb-6 text-white/50 text-sm leading-relaxed">Sim! Todos os planos incluem estrutura técnica com as melhores práticas de SEO on-page para garantir boa indexação desde o lançamento.</p></div>
+        </div>
+        <div class="reveal-card faq-item bg-dark-100 rounded-2xl border border-white/5 overflow-hidden hover:border-accent/20 transition-colors">
+            <button class="cursor-pointer w-full p-6 text-left flex justify-between items-center font-bold text-white/90 text-sm md:text-base gap-4">
+                Eu terei acesso para editar o conteúdo do site?
+                <span class="material-symbols-outlined text-white/40 icon shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content px-6"><p class="pb-6 text-white/50 text-sm leading-relaxed">Não, o acesso é restrito aos nossos desenvolvedores para garantir a performance e estabilidade total do seu site. Pequenas alterações de conteúdo (como trocar textos ou imagens) são feitas por nós gratuitamente. Mudanças estruturais ou de layout são orçadas separadamente conforme a complexidade.</p></div>
+        </div>
+        <div class="reveal-card faq-item bg-dark-100 rounded-2xl border border-white/5 overflow-hidden hover:border-accent/20 transition-colors">
+            <button class="cursor-pointer w-full p-6 text-left flex justify-between items-center font-bold text-white/90 text-sm md:text-base gap-4">
+                Como funciona o pagamento?
+                <span class="material-symbols-outlined text-white/40 icon shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content px-6"><p class="pb-6 text-white/50 text-sm leading-relaxed">50% no início do projeto e 50% na entrega final. Aceitamos Pix, cartão e transferência. Simples e sem burocracia.</p></div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<div class="border-y border-white/5 py-6 overflow-hidden bg-[#0a0a0a]">
+    <div class="marquee-content gap-8 whitespace-nowrap items-center text-white/20 font-bold tracking-tighter italic text-sm md:text-base">
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+        <span>SITES DE ALTA CONVERSÃO</span> <span class="text-accent mx-1">•</span>
+        <span>DESIGN PREMIUM</span> <span class="text-accent mx-1">•</span>
+        <span>OTIMIZADO PARA VENDAS</span> <span class="text-accent mx-1">•</span>
+        <span>SEO TÉCNICO</span> <span class="text-accent mx-1">•</span>
+        <span>ANIMAÇÕES MODERNAS</span> <span class="text-accent mx-1">•</span>
+    </div>
+</div>
+
+<footer id="footer" class="py-32 border-t border-white/5 relative bg-custom-grid overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 text-center z-10 relative flex flex-col items-center">
+        <p class="reveal text-white text-[10px] tracking-[0.3em] uppercase font-bold mb-10">Vamos construir juntos</p>
+        <h2 class="reveal font-rock text-accent text-3xl md:text-5xl mb-10 uppercase tracking-widest text-center leading-relaxed">COMECE SEU PROJETO HOJE</h2>
+        <p class="reveal text-white/65 text-base md:text-xl max-w-2xl mb-16 font-light leading-relaxed text-center mx-auto">
+            Seu site precisa trabalhar por você 24h por dia. Nós criamos páginas que atraem, convencem e transformam visitantes em clientes.
+        </p>
+        <div class="reveal flex items-center justify-center">
+            <a href="https://wa.me/5511965837275?text=Quero%20um%20site%20profissional%20que%20converta" target="_blank" rel="noopener noreferrer" class="btn-magnetic group cursor-pointer bg-accent text-black px-12 py-5 rounded-full font-bold text-sm tracking-widest inline-flex items-center gap-2 hover:shadow-[0_0_35px_rgba(132,255,0,0.5)] hover:scale-105 active:scale-95 transition-all shadow-[0_0_30px_rgba(132,255,0,0.2)]">
+                COMEÇAR MEU PROJETO
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">arrow_outward</span>
+            </a>
+        </div>
+        <div class="reveal flex flex-col md:flex-row justify-center gap-12 mt-24 w-full max-w-3xl border-t border-white/5 pt-12">
+            <div class="flex flex-col gap-2 flex-1 md:border-r border-white/5">
+                <span class="text-accent text-[10px] tracking-[0.2em] uppercase font-bold">WhatsApp</span>
+                <span class="text-white text-sm font-medium">11 96583-7275</span>
+            </div>
+            <div class="flex flex-col gap-2 flex-1 md:border-r border-white/5">
+                <span class="text-accent text-[10px] tracking-[0.2em] uppercase font-bold">Agência</span>
+                <span class="text-white text-sm font-medium">@kriva.dev</span>
+            </div>
+            <div class="flex flex-col gap-2 flex-1">
+                <span class="text-accent text-[10px] tracking-[0.2em] uppercase font-bold">Conta Dev</span>
+                <span class="text-white text-sm font-medium">@imbrendodev</span>
+            </div>
+        </div>
+        <p class="mt-10 text-white/15 text-[10px] tracking-wider text-center w-full">© 2025 kriva.dev · Todos os direitos reservados</p>
+    </div>
+    <div class="w-full h-[2px] bg-gradient-to-r from-accent/0 via-accent to-accent/0 absolute bottom-0 left-0"></div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script defer src="src/js/script.js"></script>
+</body>
+</html>

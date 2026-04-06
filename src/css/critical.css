@@ -1,0 +1,7 @@
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#050505;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}
+#loader{position:fixed;inset:0;z-index:9999;background:#050505;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:opacity .7s ease,transform .7s ease;will-change:opacity,transform}
+#loader.out{opacity:0;transform:translateY(-100%);pointer-events:none}
+.loader-wordmark{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2.8rem,10vw,5.5rem);letter-spacing:-.03em;color:#fff;position:relative;display:flex;flex-direction:column;align-items:center;gap:1rem}
+.loader-wordmark img{height:60px;width:auto;opacity:0;transform:scale(.95);will-change:transform,opacity}
